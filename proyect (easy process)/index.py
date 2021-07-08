@@ -56,7 +56,7 @@ def add_contact():
        #cur.(SELECT *FROM flaskcontacts)
        cur.execute('INSERT INTO contacts (fullname, phone, email) VALUES (%s, %s, %s)', (fullname, phone, email))
        mysql.connection.commit()
-       return 'Datos recibidos satisfactoriamente'
+       return render_template('home.html')
        
 
 
