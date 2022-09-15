@@ -1,6 +1,10 @@
 from index import *
 from flask import render_template
 
+@app.route()
+def message():
+    return "my proyect"
+
 @app.route('/')
 def home():
     return render_template('home.html')
